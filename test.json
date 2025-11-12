@@ -1,0 +1,321 @@
+{
+    "TdxIpaasVersion": "1.0",
+    "ItemPId": "cb008038-45f9-4035-a2be-445d4272ada9",
+    "ItemType": "Form",
+    "Name": "Updating Favicon and Page Title",
+    "Item": {
+      "Definition": {
+        "mode": 1,
+        "name": "Updating Favicon and Page Title",
+        "styles": "{\"theme\":\"tdx-theme-ipaas\"}",
+        "rows": [
+          {
+            "id": 1,
+            "name": "Row11",
+            "fields": [
+              {
+                "type": 32,
+                "conditions": [],
+                "fields": [
+                  {
+                    "type": 35,
+                    "conditions": [],
+                    "actions": [],
+                    "hidden": true,
+                    "id": 2,
+                    "name": "Custom26",
+                    "values": {
+                      "label": "Changing Page Favicon/Title",
+                      "value": "<script>\ndocument.title = \"Updated Page Title\";\n\nvar link = document.querySelector(\"link[rel~='icon']\");\nif (!link) {\n  link = document.createElement('link');\n  link.rel = 'icon';\n  document.getElementsByTagName('head')[0].appendChild(link);\n}\nlink.href = 'https://www.teamdynamix.com/wp-content/uploads/2021/03/TDX-marble.png';\n</script>"
+                    }
+                  }
+                ],
+                "id": 1,
+                "name": "Column25"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Row1",
+            "fields": [
+              {
+                "type": 32,
+                "fields": [
+                  {
+                    "type": 35,
+                    "conditions": [],
+                    "actions": [],
+                    "id": 4,
+                    "name": "Styles",
+                    "values": {
+                      "value": "<style>body { margin: 0 }\n.header { background-color: rgba(33, 20, 95, 1); height: 138px; width: 100%; position: relative }\n.logo { position: relative; top: 30px; left: 150px }\n.flex-container-head { display: flex; position: relative; padding-top: 18px; margin-top: 20px; margin-left: 140px; font-size: 14px; font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif; box-sizing: border-box }\n.flex-item1 { position: relative; width: 15%; text-align: center; color: rgba(255, 255, 255, 1); padding-bottom: 10px; padding-top: 10px; font-weight: normal; cursor: pointer; font-size: 14px; font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif; transition: background-color 0.3s }\n.flex-item2 { width: 35%; text-align: center; color: rgba(255, 255, 255, 1); padding-bottom: 10px; padding-top: 10px; font-weight: normal; cursor: pointer; font-size: 14px; font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif; transition: background-color 0.3s }\n.flex-item3 { width: 35%; text-align: center; color: rgba(255, 255, 255, 1); padding-bottom: 10px; padding-top: 10px; font-weight: normal; cursor: pointer; font-size: 14px; font-family: \"Helvetica Neue\", Helvetica, Arial, sans-serif; transition: background-color 0.3s }\n.flex-item1:hover, .flex-item2:hover, .flex-item3:hover { background-color: rgba(255, 255, 255, 1); color: rgba(33, 20, 95, 1); font-weight: bold }\n@media (max-width: 630px) { .header { height: 150px } .flex-container-head { width: 70% } }\n@media (max-width: 390px) { .flex-container-head { width: 320px; margin-left: 70px } .flex-item1, .flex-item2, .flex-item3 { width: 30% } .logo { left: 70px } }\n@media (min-width: 530px) { .flex-container-head { width: 370px } }</style>"
+                    }
+                  }
+                ],
+                "id": 3,
+                "name": "Column1"
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Row2",
+            "fields": [
+              {
+                "type": 32,
+                "conditions": [],
+                "fields": [
+                  {
+                    "type": 35,
+                    "conditions": [],
+                    "actions": [],
+                    "id": 6,
+                    "name": "Custom7",
+                    "values": {
+                      "value": "<!-- Header Block -->\n    <div class=\"header\">\n        <img src=\"https://solutions.teamdynamix.com/TDPortal/BE/Logo/91/0\" alt=\"Logo\" class=\"logo\">\n        <div class=\"flex-container-head\">\n            <div class=\"flex-item1\" onclick=\"window.open('https://solutions.teamdynamix.com/TDClient/1965/Portal/Home/', '_blank')\">Home</div>\n            <div class=\"flex-item2\" onclick=\"window.open('https://solutions.teamdynamix.com/TDClient/1965/Portal/Requests/ServiceCatalog', '_blank')\">Services</div>\n            <div class=\"flex-item3\" onclick=\"window.open('https://solutions.teamdynamix.com/TDClient/1965/Portal/KB/', '_blank')\">Knowledge Base</div>\n        </div>\n    </div>"
+                    }
+                  }
+                ],
+                "id": 5,
+                "name": "Column3"
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Row10",
+            "fields": [
+              {
+                "type": 32,
+                "conditions": [],
+                "fields": [
+                  {
+                    "type": 20,
+                    "conditions": [],
+                    "actions": [],
+                    "id": 8,
+                    "name": "Label25",
+                    "values": {
+                      "label": "Look At the Favicon and Page Title"
+                    },
+                    "alignment": "center center",
+                    "labelPos": "center center"
+                  }
+                ],
+                "id": 7,
+                "name": "Column23"
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "name": "Row3",
+            "fields": [
+              {
+                "type": 32,
+                "conditions": [],
+                "fields": [
+                  {
+                    "type": 12,
+                    "dataType": 3,
+                    "conditions": [],
+                    "id": 10,
+                    "name": "DatePicker8",
+                    "values": {
+                      "label": "DatePicker"
+                    }
+                  }
+                ],
+                "id": 9,
+                "name": "Column4"
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "name": "Row7",
+            "fields": [
+              {
+                "type": 32,
+                "conditions": [],
+                "fields": [
+                  {
+                    "type": 21,
+                    "dataType": 4,
+                    "conditions": [],
+                    "id": 12,
+                    "name": "Switch10",
+                    "values": {
+                      "label": "Switch"
+                    }
+                  }
+                ],
+                "id": 11,
+                "name": "Column16"
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "name": "Row8",
+            "fields": [
+              {
+                "type": 32,
+                "conditions": [],
+                "fields": [
+                  {
+                    "type": 10,
+                    "conditions": [],
+                    "id": 14,
+                    "name": "TextArea11",
+                    "values": {
+                      "label": "TextArea"
+                    }
+                  }
+                ],
+                "id": 13,
+                "name": "Column17"
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "name": "Row9",
+            "fields": [
+              {
+                "type": 32,
+                "conditions": [],
+                "fields": [
+                  {
+                    "type": 7,
+                    "conditions": [],
+                    "id": 16,
+                    "name": "ComboBox20",
+                    "values": {
+                      "label": "ComboBox"
+                    }
+                  }
+                ],
+                "id": 15,
+                "name": "Column18"
+              },
+              {
+                "type": 32,
+                "conditions": [],
+                "fields": [
+                  {
+                    "type": 7,
+                    "conditions": [],
+                    "id": 18,
+                    "name": "ComboBox22",
+                    "values": {
+                      "label": "ComboBox"
+                    }
+                  }
+                ],
+                "id": 17,
+                "name": "Column19"
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "name": "Row6",
+            "fields": [
+              {
+                "type": 32,
+                "conditions": [],
+                "fields": [
+                  {
+                    "type": 7,
+                    "conditions": [],
+                    "id": 20,
+                    "name": "ComboBox23",
+                    "values": {
+                      "label": "ComboBox"
+                    }
+                  }
+                ],
+                "id": 19,
+                "name": "Column13"
+              },
+              {
+                "type": 32,
+                "conditions": [],
+                "fields": [
+                  {
+                    "type": 7,
+                    "conditions": [],
+                    "id": 22,
+                    "name": "ComboBox24",
+                    "values": {
+                      "label": "ComboBox"
+                    }
+                  }
+                ],
+                "id": 21,
+                "name": "Column14"
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "name": "Row4",
+            "fields": [
+              {
+                "type": 32,
+                "conditions": [],
+                "fields": [
+                  {
+                    "type": 34,
+                    "dataType": 4,
+                    "conditions": [],
+                    "actions": [],
+                    "id": 24,
+                    "name": "ActionButton16",
+                    "values": {
+                      "label": "Submit"
+                    },
+                    "styles": "{\"buttonColor\":\"rgba(33, 20, 95, 1)\"}"
+                  }
+                ],
+                "id": 23,
+                "name": "Column5"
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "name": "Row5",
+            "fields": [
+              {
+                "type": 32,
+                "conditions": [],
+                "fields": [
+                  {
+                    "type": 35,
+                    "conditions": [],
+                    "actions": [],
+                    "id": 26,
+                    "name": "Custom12",
+                    "values": {
+                      "value": "<footer role=\"contentinfo\">\n  \n  \n  \n    <div class=\"master-footer\">\n\n      <div style=\"width: 100%\"><div style=\"height: 4px; width: 100%; background-color: rgba(136, 170, 227, 1)\"></div>\n<div style=\"height: 50px; width: 100%; background-color: rgba(33, 20, 95, 1)\">\n  </div></div>\n      \n\n    </div>\n  \n</footer>"
+                    }
+                  }
+                ],
+                "id": 25,
+                "name": "Column6"
+              }
+            ]
+          }
+        ]
+      },
+      "Options_": {
+        "version": 1,
+        "requiredFormClaims": {},
+        "samlAttributes": {},
+        "queryParameters": {}
+      }
+    }
+  }
